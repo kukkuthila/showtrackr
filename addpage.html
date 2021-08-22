@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <!--copy from my old site-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShowTrackr</title>
+    <link rel ="icon" href="image/index.png">
+    <!--css link-->
+    <link rel ="stylesheet" href="addpage.css">
+    <!--bootstrap link-->
+    <link rel ="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!--copy from w3schools-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+<!--start the body session-->
+    <body>
+      <!--navbar start-->
+      <div>
+        <nav class="navbar navbar-expand-sm fixed-top">
+          <img src ="image/index.png" alt="logo" style="width:40px;">
+        <span class="nav nav-pills">Show<b>Trackr</b></span>
+
+      <div class="navbar-nav">
+        <a href="homepage.html" class="nav-link active">Home</a>
+        <a href="addpage.html" class="nav-link">Add</a>
+      </div>
+
+      <div class="navbar-nav ml-auto">
+        <a href="login.html" class="nav-link active">Login</a>
+        <a href="signup.html" class="nav-link">Signup</a>
+      </div>
+        </nav>
+      </div>
+      <!--navbar end -->
+
+  <div class="container my-4">
+        <div class="card-body" style= "background-color:#e1e6e2; margin-top:100px;">
+          <form action="" method="post">
+
+            <div id="dynamic-field-1" class="form-group dynamic-field">
+              <label for="field" class="font-weight-bold">ADD TV SHOW</label>
+              <hr>
+              <label id="demo" for="field" class="font-weight-bold">Name</label>
+              <input type="search" id="field" class="form-control" placeholder="Enter Tv show name " pattern="[A-Za-z]+[A-Za-z0-9]+" />
+            </div>
+
+            <div class="clearfix mt-4">
+              <button type="submit" id="add-button" class="btn btn-primary float-left shadow-lg">Add</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+      <!--footer start-->
+              <footer>
+                <div class="footer">
+                  <p>@Copyright2021ShowTrackr</p>
+                </div>
+              </footer>
+<!--footer end-->
+
+<!--js start-->
+      <script>
+      document.querySelector('form').addEventListener('submit', handleSubmitForm);
+      function handleSubmitForm(e) {
+          e.preventDefault();
+          var add = document.querySelector('input');
+          if (add.value != ''){document.getElementById("demo").innerHTML = ( add.value + " has been added");}
+          else {document.getElementById("demo").innerHTML = "Please Enter TV Show Name";}
+      }
+      </script>
+
+</body>
+</html>

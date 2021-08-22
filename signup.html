@@ -1,0 +1,112 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <!--copy from my old site-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShowTrackr</title>
+    <link rel ="icon" href="image/index.png">
+    <!--css link-->
+    <link rel ="stylesheet" href="signup.css">
+    <!--bootstrap link-->
+    <link rel ="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!--copy from other site-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--copy from w3schools-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </head>
+
+<body>
+
+  <!--navbar start-->
+  <div>
+    <nav class="navbar navbar-expand-sm">
+      <img src ="image/index.png" alt="logo" style="width:40px;">
+    <span class="nav nav-pills">Show<b>Trackr</b></span>
+
+  <div class="navbar-nav">
+    <a href="homepage.html" class="nav-link active">Home</a>
+    <a href="addpage.html" class="nav-link">Add</a>
+  </div>
+
+  <div class="navbar-nav ml-auto">
+    <a href="login.html" class="nav-link active">Login</a>
+    <a href="signup.html" class="nav-link">Signup</a>
+  </div>
+    </nav>
+  </div>
+  <!--navbar end -->
+
+  <!-- Content -->
+  <div class="container my-5">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+    <div class="card">
+    <div class="card-body">
+      <header id="head1">Sign up</header>
+
+      <form id="signup-form" action="" method="POST">
+      <div class="form-group">
+      <div class="input-group">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="name">
+      <i class="fa fa-user"></i>
+      </span>
+      </div>
+      <input type="email" name="name" id="name" class="form-control" placeholder="Name" aria-describedby="name">
+      </div>
+      </div>
+
+      <div class="form-group">
+      <div class="input-group">
+      <div class="input-group-prepend">
+      <span class="input-group-text" id="email">@</span>
+      </div>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Email" aria-describedby="email">
+      </div>
+      </div>
+
+      <div class="form-group">
+      <div class="input-group">
+      <div class="input-group-prepend">
+      <span class="input-group-text"><i class="fa fa-key"></i></span>
+      </div>
+      <input type="password" name="password" class="form-control" id="password" placeholder="Password" aria-describedby="password">
+      </div>
+      </div>
+  </form>
+
+      <div class="singup">
+        <span>By clicking on Sign up,you agree to <b>terms & <br>conditions</b> and <b>privacy policy</b></span>
+      </div>
+      <div>
+        <button class="btn btn-primary btn-block ">Sign up</button>
+        <small class="d-flex justify-content-center links ">Already have an account?<a href="/register.html"><b>Log in now</b></a></small>
+      </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+
+    <!--footer start-->
+            <footer>
+              <div class="footer">
+                <p>@Copyright2021ShowTrackr</p>
+              </div>
+            </footer>
+<!--footer end-->
+
+<!--js file link-->
+  <script src="signup.js"></script>
+
+ </body>
+ </html>
